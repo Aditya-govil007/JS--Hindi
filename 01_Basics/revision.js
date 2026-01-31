@@ -14,7 +14,7 @@ console.log(typeof score)
 
 //Array, Objects{must},Function
 
-const heroes=['hulku','ion man','thor'];
+const heroes=['hulku','iron man','thor'];
 let myobj={
     name: 'aditya',
     age: 22
