@@ -34,3 +34,7 @@ console.log("1"+"2")
 
 console.log("1"+"2"+2)//this give O/P as 122
 console.log(1+2+"2") //this gies O/P as 32 bcoz the first value is recognised as number then followed by string which gets printed as it is
+
+
+console.log((3+4)*5%3) 
+// always use parenthesis for complex code conversion 
