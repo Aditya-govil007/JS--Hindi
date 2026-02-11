@@ -22,5 +22,3 @@ let newdate= new Date()
 console.log(newdate);
 console.log(newdate.getMonth()+1);
 console.log(newdate.getDate());
-
-$ {newdate.getDate()}
