@@ -33,7 +33,7 @@ const obj2={3:"c",4:"d"}
 
 // console.log(obj3);
 const obj3={...obj1,...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 // ...->is a spread function it combines the objects as well as array 
 
@@ -56,11 +56,23 @@ const user=[
     },
 
 ]
-console.log(user[1].email)
-console.log(tinderUser)
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(user[1].email)
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isloggedIn'));
+// console.log(tinderUser.hasOwnProperty('isloggedIn'));
+
+const course={
+    cousrename:"JS HIndi",
+    price : "999",
+    courseteacher : "Hitesh"
+
+}
+const{courseteacher : instructor}=course
+
+console.log(instructor);
+
+
 
