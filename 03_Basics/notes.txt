@@ -1,0 +1,6 @@
+{}
+this is global  execution comtext
+
+------------PHASES------------
+1. Memory creation phases ->
+2. Execution phase
