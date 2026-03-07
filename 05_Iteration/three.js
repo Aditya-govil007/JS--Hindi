@@ -37,3 +37,4 @@ for(const [key,value] of map){
 //     console.log(key, ':', value);
     
 // }
+// for of loop is not valid on object but is valid on arrays
