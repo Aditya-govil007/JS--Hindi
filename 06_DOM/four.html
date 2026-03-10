@@ -1,0 +1,59 @@
+<!-- Here we are learning how to add element in a list and we have to attach it-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: aqua; color: black;">
+    <ul class="language">
+        <li>javascript
+
+        </li>
+
+    </ul>
+</body>
+<script>
+    function addlang(langname){
+        const li= document.createElement('li')
+        li.innerHTML=`${langname}`
+
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addlang("python")
+    addlang("ruby")
+    addlang("typescript")
+
+    function addOptilang(langname){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilang("LIPI")
+
+    // EDIT
+
+    const edit=document.querySelector( "li:nth-child(2)")
+    // edit.innerHTML="Mojo"
+    const newli=document.createElement("li")
+    newli.textContent="MOJO"
+    edit.replaceWith(newli)
+
+    // Remove
+    const lastlang=document.querySelector('li : last-child')
+    lastlang.remove()
+</script>
+</html>
+
+
+<!-- steps for optimised addition of element in a list -->
+ <!-- 1. create function
+      2. create element 
+      3. using appendChild we will add new lang 
+      ....remeber and see addoptiLang function code-->
+
+
+
+      <!-- EDIT -->
