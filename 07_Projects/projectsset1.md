@@ -4,7 +4,7 @@
 
 <!-- Project 1 -Color Changer -->
 
-<!-- solution code -->
+Solution Code
 ``` javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
