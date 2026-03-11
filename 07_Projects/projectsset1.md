@@ -5,7 +5,7 @@
 <!-- Project 1 -Color Changer -->
 
 <!-- solution code -->
-
+``` javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -31,3 +31,4 @@ buttons.forEach(function (button) {
     }
   });
 });
+```
