@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: grey; color: aliceblue;">
+    <h2>Images</h2>
+    <div>
+        <ul id="image">
+            <li><img width="200px" id="aivein" src="my photo.jpg" alt="me"></li>
+            <!-- <li><img </li> -->
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('aivein').onclick=function(){
+        // alert("me")
+    // }
+    // document.getElementById('aivein').addEventListener('click', function (e){
+    //     alert('me')
+    // } )  
+    // attachEvent()
+    // jQuery
+    // by default false hoti h third variable in this 
+    
+    
+    // padhna kya kya hai ->
+    // type , timestamp , defaultPrevented 
+    // target , toElement , srcElement , currentTarget ,
+    // clientX , clientY , screenX , screenY
+    // altKey , shiftKey , ctrlKey , keyCode
+    
+    
+    // document.getElementById('image').addEventListener('click' , function (e){
+    //     // console.log("clicked inside the ul");
+        
+    // },false)
+    // document.getElementById('aivein').addEventListener('click' , function(e){
+    //     // console.log('me');
+    //     // e.stopPropagation()
+        
+    // },false)
+
+    document.querySelector('#image').addEventListener('click' , function (e){
+        console.log(e.target.tagName);
+        if (e.target.tagName==='IMG') {
+            console.log(e.target.id);
+            
+            let remove=e.target.parentNode
+            remove.remove()
+            
+        }
+        
+        
+        // remove.parentNode.removeChild(remove)
+        
+    },false)
+    // e.target-> tells the refernce from which source it is being done
+    // e.target.parentNode -> will give te <li></li> or the parent that is 
+    
+
+</script>
+
+</html>
