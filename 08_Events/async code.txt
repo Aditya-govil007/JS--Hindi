@@ -1,0 +1,8 @@
+block and non blocking code
+
+blocking code-> block your flow of program -> read the filr in sync
+eg-> dont use phone while working
+
+non blocking -> does not block the flow of program-> read file in async
+eg-> u can  use phone while working
+ 4:18 
