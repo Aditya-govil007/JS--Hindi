@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur badmos</title>
+</head>
+<body style="background-color: #313133;">
+    <button id="orange">orange</button>
+    <button id ="green">green</button>
+</body>
+<script>
+    // function init(){
+    // let name="Mozilla"
+    // function displayname(){
+    //     console.log(name);
+    // } 
+    // displayname();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username="badmos" 
+    //     function innerone(){
+    //       let secret="123"
+    //       console.log(("inner",username));
+           
+    //     }
+    //     function innertwo(){
+    //         console.log("innertwo",username);
+    //         console.log(secret);
+            
+    //     }
+    //     innerone()
+    //     innertwo()
+    // }
+    // console.log(username);
+
+
+
+
+    
+</script>
+<script>
+    // document.getElementById('orange').onclick=function(){
+    //     document.body.style.backgroundColor='orange'
+    // }
+    // document.getElementById('green').onclick=function(){
+    //     document.body.style.backgroundColor='green'
+    // }
+
+    function clickhandler(color){
+        // document.body.style.backgroundColor=`${color}`
+
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }
+
+    document.getElementById('orange').onclick=clickhandler("orange")
+    document.getElementById('green').onclick=clickhandler("green")
+    }
+</script>
+</html>
